@@ -1,16 +1,16 @@
 .calendario {
-    display: grid;
-  }
-  
-  .fila {
-    display: flex;
-  }
-  
-  .celda {
-    width: 30px;
-    height: 30px;
-    border: 1px solid black;
-  }
+  display: grid;
+}
+
+.fila {
+  display: flex;
+}
+
+.celda {
+  width: 30px;
+  height: 30px;
+  border: 1px solid black;
+}
 
   ul {
     list-style-type: none;

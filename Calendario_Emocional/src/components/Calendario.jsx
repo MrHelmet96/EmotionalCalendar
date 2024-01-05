@@ -3,7 +3,12 @@ import '../assets/styles/styles.css'; // Asegúrate de crear este archivo CSS
 
 function Calendario() {
   const dias = Array.from({ length: 31 }, (_, i) => i + 1);
-  const meses = ['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio', 'Julio', 'Agosto', 'Septiembre', 'Octubre', 'Noviembre', 'Diciembre'];
+  const meses = ['E', 'F', 'M', 'A', 'M', 'J', 'J', 'A', 'S', 'O', 'N', 'D'];
+  
+  // Función para obtener la cantidad de días en un mes
+  const getDiasEnMes = (mes, año) => {
+    return new Date(año, mes, 0).getDate();
+  };
 
   return (
     <div className="calendario">
@@ -17,7 +22,7 @@ function Calendario() {
         <div key={i} className="fila">
           <div className="celda">{dia}</div>
           {meses.map((mes, j) => (
-            <div key={j} className="celda"></div>
+            <div key={j} className="celda"></div> /* Celdas vacías para los días */
           ))}
         </div>
       ))}
