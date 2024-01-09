@@ -1,15 +1,29 @@
 .calendario {
   display: grid;
+  padding: 10px;
 }
 
 .fila {
   display: flex;
+  padding: 5px;
+}
+
+.dia, .mes {
+  width: 30px;
+  height: 30px;
+  padding: 5px 11.5px;
+}
+
+.fila-meses{
+  margin-left: 45px;
 }
 
 .celda {
   width: 30px;
   height: 30px;
+  margin: 5px 10px;
   border: 1px solid black;
+  border-radius: 50%; /* Hace que las celdas sean círculos */
 }
 
   ul {
